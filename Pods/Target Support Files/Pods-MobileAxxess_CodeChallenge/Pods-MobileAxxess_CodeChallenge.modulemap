@@ -1,0 +1,6 @@
+module Pods_MobileAxxess_CodeChallenge {
+  umbrella header "Pods-MobileAxxess_CodeChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
