@@ -14,3 +14,23 @@ struct ResponseArray: Codable {
     var date: String?
     var data: String?
 }
+
+extension ResponseArray: Persistable {
+    public init(managedObject: DataOffline) {
+        id = managedObject.id
+        type = managedObject.type
+        date = managedObject.date
+        data = managedObject.data
+    }
+    
+    public func managedObject() -> DataOffline {
+        let offlineData = DataOffline()
+        offlineData.id = id ?? ""
+        offlineData.type = type ?? ""
+        offlineData.date = date ?? ""
+        offlineData.data = data ?? ""
+        return offlineData
+    }
+    
+    
+}

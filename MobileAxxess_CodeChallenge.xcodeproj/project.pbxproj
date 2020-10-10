@@ -13,7 +13,6 @@
 		6A03FDFD251F2B320004344B /* JSONDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03FDFC251F2B320004344B /* JSONDisplayViewController.swift */; };
 		6A03FE02251F2B330004344B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A03FE01251F2B330004344B /* Assets.xcassets */; };
 		6A03FE05251F2B330004344B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A03FE03251F2B330004344B /* LaunchScreen.storyboard */; };
-		6A03FE10251F2B330004344B /* MobileAxxess_CodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03FE0F251F2B330004344B /* MobileAxxess_CodeChallengeTests.swift */; };
 		6A03FE1B251F2B330004344B /* MobileAxxess_CodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03FE1A251F2B330004344B /* MobileAxxess_CodeChallengeUITests.swift */; };
 		6A03FE29251F360D0004344B /* JSONDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03FE28251F360D0004344B /* JSONDisplayModel.swift */; };
 		6A03FE2B251F39040004344B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03FE2A251F39040004344B /* Constants.swift */; };
@@ -26,6 +25,10 @@
 		6A03FE3B251F83420004344B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03FE3A251F83420004344B /* DetailViewController.swift */; };
 		6A03FE3D251F88CD0004344B /* DisplayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03FE3C251F88CD0004344B /* DisplayPresenter.swift */; };
 		6A03FE3F251F88E00004344B /* DisplayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A03FE3E251F88E00004344B /* DisplayInteractor.swift */; };
+		6A816A412531FDEB007C1B3C /* MobileAxxess_CodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A816A402531FDEB007C1B3C /* MobileAxxess_CodeChallengeTests.swift */; };
+		6AC5ABCD25319D000008ACB1 /* RealmOfflineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5ABCC25319D000008ACB1 /* RealmOfflineData.swift */; };
+		6AC5ABCF2531DB360008ACB1 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5ABCE2531DB360008ACB1 /* Connectivity.swift */; };
+		A9FBF1BBE0524752C5B636DA /* libPods-MobileAxxess_CodeChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D724FA23C967884067243C /* libPods-MobileAxxess_CodeChallengeTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07D724FA23C967884067243C /* libPods-MobileAxxess_CodeChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileAxxess_CodeChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1974485C87DD0685734EBED2 /* Pods-MobileAxxess_CodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAxxess_CodeChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-MobileAxxess_CodeChallengeTests/Pods-MobileAxxess_CodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		3AAA6AD4549ACF5C3EA956FF /* Pods-MobileAxxess_CodeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAxxess_CodeChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileAxxess_CodeChallengeTests/Pods-MobileAxxess_CodeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A03FDF5251F2B320004344B /* MobileAxxess_CodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAxxess_CodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A03FDF8251F2B320004344B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A03FDFA251F2B320004344B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +60,6 @@
 		6A03FE04251F2B330004344B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A03FE06251F2B330004344B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A03FE0B251F2B330004344B /* MobileAxxess_CodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileAxxess_CodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A03FE0F251F2B330004344B /* MobileAxxess_CodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAxxess_CodeChallengeTests.swift; sourceTree = "<group>"; };
 		6A03FE11251F2B330004344B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A03FE16251F2B330004344B /* MobileAxxess_CodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileAxxess_CodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A03FE1A251F2B330004344B /* MobileAxxess_CodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAxxess_CodeChallengeUITests.swift; sourceTree = "<group>"; };
@@ -70,6 +75,9 @@
 		6A03FE3A251F83420004344B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6A03FE3C251F88CD0004344B /* DisplayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayPresenter.swift; sourceTree = "<group>"; };
 		6A03FE3E251F88E00004344B /* DisplayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayInteractor.swift; sourceTree = "<group>"; };
+		6A816A402531FDEB007C1B3C /* MobileAxxess_CodeChallengeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileAxxess_CodeChallengeTests.swift; sourceTree = "<group>"; };
+		6AC5ABCC25319D000008ACB1 /* RealmOfflineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmOfflineData.swift; sourceTree = "<group>"; };
+		6AC5ABCE2531DB360008ACB1 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		736182D27525616C8BD34436 /* libPods-MobileAxxess_CodeChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileAxxess_CodeChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		947936E90554D78CBD586E7B /* Pods-MobileAxxess_CodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAxxess_CodeChallenge.release.xcconfig"; path = "Target Support Files/Pods-MobileAxxess_CodeChallenge/Pods-MobileAxxess_CodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		A77BCF49832DB1A75D56228F /* Pods-MobileAxxess_CodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAxxess_CodeChallenge.debug.xcconfig"; path = "Target Support Files/Pods-MobileAxxess_CodeChallenge/Pods-MobileAxxess_CodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FBF1BBE0524752C5B636DA /* libPods-MobileAxxess_CodeChallengeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +115,8 @@
 			children = (
 				A77BCF49832DB1A75D56228F /* Pods-MobileAxxess_CodeChallenge.debug.xcconfig */,
 				947936E90554D78CBD586E7B /* Pods-MobileAxxess_CodeChallenge.release.xcconfig */,
+				3AAA6AD4549ACF5C3EA956FF /* Pods-MobileAxxess_CodeChallengeTests.debug.xcconfig */,
+				1974485C87DD0685734EBED2 /* Pods-MobileAxxess_CodeChallengeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -152,6 +163,8 @@
 				6A03FE01251F2B330004344B /* Assets.xcassets */,
 				6A03FE03251F2B330004344B /* LaunchScreen.storyboard */,
 				6A03FE06251F2B330004344B /* Info.plist */,
+				6AC5ABCC25319D000008ACB1 /* RealmOfflineData.swift */,
+				6AC5ABCE2531DB360008ACB1 /* Connectivity.swift */,
 			);
 			path = MobileAxxess_CodeChallenge;
 			sourceTree = "<group>";
@@ -159,8 +172,8 @@
 		6A03FE0E251F2B330004344B /* MobileAxxess_CodeChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				6A03FE0F251F2B330004344B /* MobileAxxess_CodeChallengeTests.swift */,
 				6A03FE11251F2B330004344B /* Info.plist */,
+				6A816A402531FDEB007C1B3C /* MobileAxxess_CodeChallengeTests.swift */,
 			);
 			path = MobileAxxess_CodeChallengeTests;
 			sourceTree = "<group>";
@@ -178,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				736182D27525616C8BD34436 /* libPods-MobileAxxess_CodeChallenge.a */,
+				07D724FA23C967884067243C /* libPods-MobileAxxess_CodeChallengeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A03FE22251F2B330004344B /* Build configuration list for PBXNativeTarget "MobileAxxess_CodeChallengeTests" */;
 			buildPhases = (
+				6E2832DAA673DD9CD36FCAA9 /* [CP] Check Pods Manifest.lock */,
 				6A03FE07251F2B330004344B /* Sources */,
 				6A03FE08251F2B330004344B /* Frameworks */,
 				6A03FE09251F2B330004344B /* Resources */,
@@ -254,6 +269,7 @@
 					};
 					6A03FE0A251F2B330004344B = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 						TestTargetID = 6A03FDF4251F2B320004344B;
 					};
 					6A03FE15251F2B330004344B = {
@@ -309,6 +325,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6E2832DAA673DD9CD36FCAA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileAxxess_CodeChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C846B2F6A83D6AF09C1ECEC8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +380,7 @@
 				6A03FE3F251F88E00004344B /* DisplayInteractor.swift in Sources */,
 				6A03FE2F251F3B230004344B /* JSONDisplayPresenter.swift in Sources */,
 				6A03FE31251F3D7F0004344B /* JSONDisplayInteractor.swift in Sources */,
+				6AC5ABCD25319D000008ACB1 /* RealmOfflineData.swift in Sources */,
 				6A03FE37251F70270004344B /* JSONDisplayTableViewCell.swift in Sources */,
 				6A03FE2D251F395D0004344B /* JSONDisplayProtocol.swift in Sources */,
 				6A03FE2B251F39040004344B /* Constants.swift in Sources */,
@@ -349,6 +388,7 @@
 				6A03FDF9251F2B320004344B /* AppDelegate.swift in Sources */,
 				6A03FE33251F4DE50004344B /* JSONDisplayFactory.swift in Sources */,
 				6A03FE3D251F88CD0004344B /* DisplayPresenter.swift in Sources */,
+				6AC5ABCF2531DB360008ACB1 /* Connectivity.swift in Sources */,
 				6A03FE35251F69460004344B /* JSONDisplayRouter.swift in Sources */,
 				6A03FE29251F360D0004344B /* JSONDisplayModel.swift in Sources */,
 				6A03FDFB251F2B320004344B /* SceneDelegate.swift in Sources */,
@@ -359,7 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A03FE10251F2B330004344B /* MobileAxxess_CodeChallengeTests.swift in Sources */,
+				6A816A412531FDEB007C1B3C /* MobileAxxess_CodeChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,9 +594,11 @@
 		};
 		6A03FE23251F2B330004344B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AAA6AD4549ACF5C3EA956FF /* Pods-MobileAxxess_CodeChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q8ZDS6DQB4;
 				INFOPLIST_FILE = MobileAxxess_CodeChallengeTests/Info.plist;
@@ -568,6 +610,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kunal.MobileAxxess-CodeChallengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileAxxess_CodeChallengeTests/MobileAxxess_CodeChallengeTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileAxxess_CodeChallenge.app/MobileAxxess_CodeChallenge";
@@ -576,9 +620,11 @@
 		};
 		6A03FE24251F2B330004344B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1974485C87DD0685734EBED2 /* Pods-MobileAxxess_CodeChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q8ZDS6DQB4;
 				INFOPLIST_FILE = MobileAxxess_CodeChallengeTests/Info.plist;
@@ -590,6 +636,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kunal.MobileAxxess-CodeChallengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileAxxess_CodeChallengeTests/MobileAxxess_CodeChallengeTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileAxxess_CodeChallenge.app/MobileAxxess_CodeChallenge";

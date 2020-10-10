@@ -64,7 +64,7 @@ class JSONDisplayViewController: UIViewController {
     
     @objc private func showSortOption() {
         if jsonFieldsArr.count > 0 {
-            let alert = UIAlertController(title: "", message: "Please Select an Option", preferredStyle: .actionSheet)
+            let alert = UIAlertController(title: "", message: SORT_BY, preferredStyle: .actionSheet)
             alert.addAction(UIAlertAction(title: "Image", style: .default, handler: { (_) in
                 self.jsonFieldsArr = self.jsonFieldsArr.sorted(by: {$0.type ?? "" < $1.type ?? ""})
                 self.jsonDisplayTableView.reloadData()

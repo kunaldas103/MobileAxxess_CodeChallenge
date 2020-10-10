@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import RealmSwift
 
 struct DisplayInteractor: DetailInteractorProtocol {
     
@@ -18,13 +19,52 @@ struct DisplayInteractor: DetailInteractorProtocol {
         self.presenter = presenter
     }
     
-    func fetchImageData(imageUrl: String) {
+    private func saveImageData(data: Data, url: String) {
+        do {
+           let realm = try Realm()
+            let imageOffline = ImageOffline()
+            imageOffline.imageUrl = url
+            imageOffline.photoData = data
+           try  realm.write {
+                realm.add(imageOffline)
+            }
+        } catch {
+            print("Error initialising Realm : \(error)")
+        }
+    }
+    
+    private func getOfflineImageData(for url: String) {
+        do {
+            let realm = try Realm()
+            let offlineImage = realm.object(ofType: ImageOffline.self, forPrimaryKey: url)
+            if let data = offlineImage?.photoData {
+                self.presenter?.imageFetchedSuccess(imageData: data)
+            } else {
+                self.presenter?.imageFetchFailed()
+            }
+            
+           
+        } catch {
+             print("Error getting offline image from Realm : \(error)")
+        }
+    }
+    
+    private func getImageData(imageUrl: String) {
         AF.request(imageUrl).responseData { (response) in
             if let imgData = response.data {
                 self.presenter?.imageFetchedSuccess(imageData: imgData)
+                self.saveImageData(data: imgData, url: imageUrl)
             } else if response.error != nil {
                 self.presenter?.imageFetchFailed()
             }
+        }
+    }
+    
+    func fetchImageData(imageUrl: String) {
+        if Connectivity.isConnectedToInternet {
+            getImageData(imageUrl: imageUrl)
+        } else {
+            getOfflineImageData(for: imageUrl)
         }
     }
 }
