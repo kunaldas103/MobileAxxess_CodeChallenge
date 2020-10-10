@@ -22,12 +22,12 @@ struct DisplayInteractor: DetailInteractorProtocol {
     private func saveImageData(data: Data, url: String) {
         do {
            let realm = try Realm()
-            let imageOffline = ImageOffline()
-            imageOffline.imageUrl = url
-            imageOffline.photoData = data
-           try  realm.write {
-                realm.add(imageOffline)
-            }
+                let imageOffline = ImageOffline()
+                imageOffline.imageUrl = url
+                imageOffline.photoData = data
+                try  realm.write {
+                    realm.add(imageOffline, update: .all)
+                }
         } catch {
             print("Error initialising Realm : \(error)")
         }
